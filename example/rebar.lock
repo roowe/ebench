@@ -1,0 +1,12 @@
+[{<<"jiffy">>,
+  {git,"https://github.com/davisp/jiffy",
+       {ref,"ee8b48cb448a999e1fddbb5e2e32e7dfe33acf5c"}},
+  0},
+ {<<"jsone">>,
+  {git,"https://github.com/sile/jsone",
+       {ref,"9a5ee505278a824e5d30195ef99e977972acd93a"}},
+  0},
+ {<<"jsx">>,
+  {git,"https://github.com/talentdeficit/jsx.git",
+       {ref,"45ffea21a6863c58fb7da1f937e868916ff68b27"}},
+  0}].

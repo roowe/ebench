@@ -1,0 +1,35 @@
+#!/bin/bash
+
+for f in `ls data/`; do
+    name=`basename $f .json`         
+    echo "         'jiffy_encode_"$name"_bench'/1,"
+    echo "         'jsone_encode_"$name"_bench'/1,"    
+    echo "         'jsx_encode_"$name"_bench'/1,"    
+
+    echo "         'jiffy_decode_"$name"_bench'/1,"
+    echo "         'jsone_decode_"$name"_bench'/1,"    
+    echo "         'jsx_decode_"$name"_bench'/1,"
+
+
+done
+
+echo "--------"
+
+for f in `ls data/`; do
+    name=`basename $f .json`
+    echo "'jiffy_encode_"$name"_bench'(S) ->"
+    echo "    jiffy_encode_bench(S, \"data/$name.json\")."
+    echo "'jsone_encode_"$name"_bench'(S) ->"
+    echo "    jsone_encode_bench(S, \"data/$name.json\")."
+    echo "'jsx_encode_"$name"_bench'(S) ->"
+    echo "    jsx_encode_bench(S, \"data/$name.json\")."
+
+    echo "'jiffy_decode_"$name"_bench'(S) ->"
+    echo "    jiffy_decode_bench(S, \"data/$name.json\")."
+    echo "'jsone_decode_"$name"_bench'(S) ->"
+    echo "    jsone_decode_bench(S, \"data/$name.json\")."
+    echo "'jsx_decode_"$name"_bench'(S) ->"
+    echo "    jsx_decode_bench(S, \"data/$name.json\")."
+
+done
+
