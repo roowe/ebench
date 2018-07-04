@@ -1,9 +1,8 @@
-example
-=====
+## HOWTO
 
-An OTP library
+please install [rebar3](https://www.rebar3.org/).
 
-Build
------
+```sh
+$  ./run.sh
+```
 
-    $ rebar3 compile
