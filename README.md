@@ -1,9 +1,7 @@
 ebench
 =====
 
-An OTP library
+[中文文档](README-cn.md)
 
-Build
------
+English: TODO
 
-    $ rebar3 compile
